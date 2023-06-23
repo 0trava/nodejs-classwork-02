@@ -4,6 +4,12 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
+// Змінні оточення
+require('dotenv').config();
+// Тепер у файлі програми app.js будуть доступні будь-які змінні, які ми додали до файлу .env. Ці змінні доступні тепер у програмі наступним чином
+// process.env.SECRET_KEY;
+// process.env.NODE_ENV;
+
 // Спочатку підключено всі сторонні пакети, які потрібні для функціонування програми. 
 // Після ми підключаємо роути, надалі ми їх змінимо та внесемо додатковий функціонал.
 const indexRouter = require('./routes/index');
