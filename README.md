@@ -145,3 +145,15 @@ app
     res.send('Update blog');
   });
 ~~~
+
+
+# REST API
+
+Express application generator https://expressjs.com/en/starter/generator.html
+
+~~~
+npx express-generator --view=ejs simple-express
+~~~
+
+npx - утиліта, яка вже є у вас у системі якщо ви встановили Node.js версії вище 8.x, вона дозволяє виконувати команди інших утиліт не встановлюючи їх глобально у системі. Далі ми вказуємо, що хочемо використати шаблон ejs параметром --view=ejs та останнім параметром вказуємо ім'я програми simple-express
+
